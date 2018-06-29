@@ -15,6 +15,9 @@ Are you ever curious to see what the current weather is like in the top 5 cities
 ## Wireframes
 
 ![landing](images/landing.jpg)
+Landing page
+![weather](images/weather.jpg)
+Weather page layout for each city
 
 ## Using the App
 
