@@ -66,5 +66,8 @@ header {
 .city {
   flex-basis: 20%;
   text-align: center;
-  border: 1px solid white;
+}
+
+.city-icon {
+  height: 100px;
 }
