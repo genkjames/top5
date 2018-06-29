@@ -1,4 +1,4 @@
-![logo](images/logo.png)
+![logo](src/images/logo.png)
 # 
 
 ### Table of Contents

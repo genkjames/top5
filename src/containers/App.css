@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+
+.content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Landing page */
+
+.landing {
+  background: url('../images/background.png');
+  background-size: cover;
+}
+
+header {
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 200px;
+}
+
+.catch-phrase {
+  font-size: 35px;
+}
+
+/* About section */
+
+.about {
+  background: #000;
+  padding: 50px;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.about > * {
+  padding: 10px 40px;
+  flex-basis: 33%;
+}
+
+.about p {
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+/* Cities */
+
+.cities {
+  display: flex;
+  padding: 50px;
+}
+
+.city {
+  flex-basis: 20%;
+  text-align: center;
+  border: 1px solid white;
+}
