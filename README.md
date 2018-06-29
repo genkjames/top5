@@ -1,5 +1,5 @@
 ![logo](images/logo.png)
-# Top 5
+# 
 
 ### Table of Contents
 
@@ -14,7 +14,7 @@ Are you ever curious to see what the current weather is like in the top 5 cities
 
 ## Wireframes
 
-![landing](images/landing.png)
+![landing](images/landing.pdf)
 
 ## Using the App
 
