@@ -68,6 +68,8 @@ header {
 .city {
   flex-basis: 20%;
   text-align: center;
+  color: white;
+  text-decoration: none;
 }
 
 .city-icon {

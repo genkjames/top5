@@ -1,14 +1,19 @@
 import React from 'react';
-import View from './View';
+import City from './City';
 
 function Cities(props) {
+  const cities = props.cities.map(city => {
+    return (
+      <City 
+        key={city.id}
+        name={city.name}
+      />
+    )
+  })
+  
   return (
     <div className="cities">
-      <View city="Bangkok" />
-      <View city="London" />
-      <View city="Paris" />
-      <View city="Singapore" />
-      <View city="New York City" />
+      {cities}
     </div>
   )
 }

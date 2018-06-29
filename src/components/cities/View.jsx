@@ -1,13 +1,14 @@
 import React from 'react';
-import nyc from '../../images/nyc.png';
 
 function View(props) {
+  console.log(props);
   return (
-    <div className="city">
-      <img className="city-icon" src={nyc} alt={props.city} />
-      <p>{props.city}</p>
+    <div>
+      {props.city ? (<h1>{props.city.name}</h1>) : (<h1>Loading</h1>)}
+      
     </div>
   )
+  
 }
 
 export default View;
