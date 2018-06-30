@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function City(props) {
   return (
-    <Link to={`/${props.name.toLocaleLowerCase()}`} className="city">
+    <Link to={`/${props.name.toLocaleLowerCase().replace(' ', '-')}`} className="city">
       <img className="city-icon" src={nyc} alt={props.name} />
       <p>{props.name}</p>
     </Link>
