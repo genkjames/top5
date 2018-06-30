@@ -4,10 +4,11 @@ import { Link } from 'react-router-dom';
 function City(props) {
   const name = props.name.toLocaleLowerCase().replace(' ', '-');
   return (
-    <Link to={`/${name}`} className="city">
-      <img className="city-icon" src={require(`../../images/${name}.jpg`)} alt="city icon" />
+    <div className="city">
+      <div className={`city-icon ${name}`}></div>
       <p>{props.name}</p>
-    </Link>
+      <div className="drop-view"><Link to={`/${name}`}>View</Link></div>
+    </div>
   )
 }
 
