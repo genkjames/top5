@@ -24,7 +24,8 @@ class App extends Component {
 
   getCurrentCity(name) {
     const index = this.state.cities.findIndex(city => city.name.toLocaleLowerCase().replace(' ', '-') === name);
-    return this.state.cities[index];
+    const otherCities = this.state.cities.filter(city => city.name.toLocaleLowerCase().replace(' ', '-') !== name)
+    return {city: this.state.cities[index], others: otherCities};
   }
 
   componentDidMount() {

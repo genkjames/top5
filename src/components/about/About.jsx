@@ -4,16 +4,16 @@ import View from './View';
 function About(props) {
   const aboutStatements = [
       {
-        icon: "cloud",
-        statement: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        icon: "eye",
+        statement: "View the weather of the top 5 popular cities in the world."
       },
       {
-        icon: "cloud",
-        statement: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        icon: "compass",
+        statement: "You not only get to see the weather, but also a famous icon of the city."
       },
       {
-        icon: "cloud",
-        statement: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        icon: "arrow-down",
+        statement: "Click on any of the cities below and start exploring!"
       }
     ].map((about, i) => {
       return (
