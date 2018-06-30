@@ -23,6 +23,14 @@ header {
   background-size: cover;
 }
 
+@media screen and (max-width: 1042px) {
+  header {
+    padding: 20px 15px 40px;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
 .logo {
   width: 200px;
 }
@@ -50,12 +58,38 @@ header {
   color: #fff;
   text-align: center;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+}
+
+@media screen and (max-width: 1042px) {
+  .about {
+    padding: 20px 15px;
+  }
 }
 
 .about > * {
   padding: 10px 40px;
   flex-basis: 33%;
+}
+
+@media screen and (max-width: 834px) {
+  .about > * {
+    padding: 10px 15px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .about > * {
+    flex-basis: 50%;
+  }
+}
+
+@media screen and (max-width: 466px) {
+  .about > * {
+    padding: 20px 15px;
+    flex-basis: 100%;
+  }
 }
 
 .fa {
@@ -73,6 +107,13 @@ header {
 .cities {
   display: flex;
   padding: 50px;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1042px) {
+  .cities {
+    padding: 50px 15px;
+  }
 }
 
 .more-cities {
@@ -92,6 +133,28 @@ header {
   flex-basis: 20%;
 }
 
+@media screen and (max-width: 798px) { 
+    .cities {
+      justify-content: center;
+    } 
+
+    .cities .city {
+      flex-basis: 33%;
+    }
+}
+
+@media screen and (max-width: 594px) { 
+   .cities .city {
+      flex-basis: 50%;
+    }
+}
+
+@media screen and (max-width: 418px) { 
+   .cities .city {
+      flex-basis: 100%;
+    }
+}
+
 .drop-view {
   position: absolute;
   top: 0;
@@ -107,7 +170,13 @@ header {
 .drop-view a {
   color: #fff;
   text-decoration: none;
-  line-height: 400px;
+  line-height: 350px;
+}
+
+@media screen and (max-width: 798px) {
+  .drop-view a {
+    line-height: 300px;
+  }
 }
 
 .more-cities .drop-view a {
@@ -131,6 +200,16 @@ header {
 
 .cities .city:nth-child(even) {
   margin: 50px 0 0 0;
+}
+
+@media screen and (max-width: 798px) {
+  .cities .city:nth-child(odd) {
+    margin: 10px 0;
+  }
+
+  .cities .city:nth-child(even) {
+    margin: 10px 0;
+  }
 }
 
 .bangkok {
@@ -161,7 +240,13 @@ header {
 }
 
 .cities .city-icon {
-  height: 400px;
+  height: 300px;
+}
+
+@media screen and (max-width: 798px) {
+  .cities .city-icon {
+    height: 250px;
+  }
 }
 
 .more-cities .city-icon {
