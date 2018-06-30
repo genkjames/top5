@@ -1,11 +1,11 @@
 import React from 'react';
-import nyc from '../../images/nyc.png';
 import { Link } from 'react-router-dom';
 
 function City(props) {
+  const name = props.name.toLocaleLowerCase().replace(' ', '-');
   return (
-    <Link to={`/${props.name.toLocaleLowerCase().replace(' ', '-')}`} className="city">
-      <img className="city-icon" src={nyc} alt={props.name} />
+    <Link to={`/${name}`} className="city">
+      <img className="city-icon" src={require(`../../images/${name}.jpg`)} alt="city icon" />
       <p>{props.name}</p>
     </Link>
   )
