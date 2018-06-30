@@ -121,6 +121,12 @@ header {
   padding: 15px;
 }
 
+@media screen and (max-width: 518px) {
+  .more-cities {
+    width: 100%;
+  }
+}
+
 .city {
   position: relative;
   text-align: center;
@@ -263,8 +269,19 @@ header {
 
 .city-view {
   background-size: cover;
+  background-position: center;
   width: calc(100% - 200px);
   min-height: 100vh;
+}
+
+@media screen and (max-width: 518px) {
+  .city-container {
+    flex-direction: column;
+  }
+
+  .city-view {
+    width: 100%;
+  }
 }
 
 .cover {
@@ -286,6 +303,16 @@ header {
 .temp-container > * {
   flex-basis: 220px;
   padding: 30px 20px;
+}
+
+@media screen and (max-width: 834px) {
+  .temp-container {
+    flex-direction: column;
+  }
+
+  .temp-container > * {
+    padding: 30px 15px 50px;
+  }
 }
 
 .temp-container p:not(.temperature) {
