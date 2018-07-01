@@ -47,6 +47,7 @@ class App extends Component {
               render={(props) => (
                 <View 
                   city={this.getCurrentCity(props.match.params.id)}
+                  cities={this.state.cities}
                 />
               )}
             />
