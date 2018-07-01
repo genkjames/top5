@@ -13,13 +13,16 @@ body {
 }
 
 /* Landing page */
+.landing {
+  display: none;
+}
 
 header {
   padding: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: url('../images/bg.jpg');
+  background: url('../images/background.jpg');
   background-size: cover;
 }
 
@@ -407,3 +410,199 @@ header {
   font-size: 30px;
   margin: 50px 0 20px;
 }
+
+/* Animation Weather Show */
+
+.show {
+  position: absolute;
+  top: 0;
+  min-height: 100vh;
+  width: 100%;
+  border: 1px solid #000;
+}
+
+.weather-element {
+  width: 200px;
+  transform: scale(0);
+}
+
+.sun {
+  animation: sun 4100ms 200ms forwards 1 ease-in;
+}
+
+.cloud {
+  animation: cloud 3400ms 800ms forwards 1 ease-in;
+}
+
+.rain {
+  animation: rain 2700ms 1400ms forwards 1 ease-in;
+}
+
+.snow {
+  animation: snow 2000ms 2000ms forwards 1 ease-in;
+}
+
+.thunder {
+  animation: thunder 1300ms 2600ms forwards 1 ease-in;
+}
+
+@keyframes sun {
+  0% {
+    transform: scale(0);
+  }
+
+  7% {
+    transform: scale(1.5);
+  }
+
+  12% {
+    transform: scale(0);
+  }
+
+  76% {
+    transform: scale(0);
+  }
+
+  83% {
+    transform: scale(1);
+  }
+
+  98% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes cloud {
+  0% {
+    transform: scale(0);
+  }
+
+  9% {
+    transform: scale(1.5);
+  }
+
+  15% {
+    transform: scale(0);
+  }
+
+  74% {
+    transform: scale(0);
+  }
+
+  82% {
+    transform: scale(1);
+  }
+
+  97% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes rain {
+  0% {
+    transform: scale(0);
+  }
+
+  11% {
+    transform: scale(1.5);
+  }
+
+  19% {
+    transform: scale(0);
+  }
+
+  70% {
+    transform: scale(0);
+  }
+
+  81% {
+    transform: scale(1);
+  }
+
+  96% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes snow {
+  0% {
+    transform: scale(0);
+  }
+
+  15% {
+    transform: scale(1.5);
+  }
+
+  25% {
+    transform: scale(0);
+  }
+
+  65% {
+    transform: scale(0);
+  }
+
+  80% {
+    transform: scale(1);
+  }
+
+  95% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes thunder {
+  0% {
+    transform: scale(0);
+  }
+
+  23% {
+    transform: scale(1.5);
+  }
+
+  38% {
+    transform: scale(0);
+  }
+
+  54% {
+    transform: scale(0);
+  }
+
+  77% {
+    transform: scale(1);
+  }
+
+  92% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes appear {
+  to {
+    transform: scale(1);
+  }
+
+  from {
+    transform: scale(0);
+  }
+}
+
