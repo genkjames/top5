@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import './App.css';
 import Landing from '../components/Landing';
 import View from '../components/cities/View';
+import Loading from '../components/Loading';
 
 class App extends Component {
   constructor(props) {
@@ -35,20 +36,24 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Switch>
-          <Route
-            exact path="/"
-            render={() => (<Landing cities={this.state.cities}/>)}
-          />
-          <Route 
-            path="/:id"
-            render={(props) => (
-              <View 
-                city={this.getCurrentCity(props.match.params.id)}
-              />
-            )}
-          />
-        </Switch>
+        {this.state.cities.length > 0 ? (
+          <Switch>
+            <Route
+              exact path="/"
+              render={() => (<Landing cities={this.state.cities}/>)}
+            />
+            <Route 
+              path="/:id"
+              render={(props) => (
+                <View 
+                  city={this.getCurrentCity(props.match.params.id)}
+                />
+              )}
+            />
+          </Switch>) : (
+            <Loading />
+          )
+        }
       </div>
     );
   }

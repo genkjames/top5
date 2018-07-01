@@ -1,6 +1,7 @@
 import React from 'react';
 import City from './City';
 import logo from '../../images/logo.png';
+import Loading from '../Loading';
 
 function View(props) {
   let otherCities;
@@ -47,7 +48,7 @@ function View(props) {
           </div>
         </div>
       ) : (
-        <h1>Loading</h1>
+        <Loading />
       )}      
     </div>
   )
