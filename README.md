@@ -30,4 +30,5 @@ The landing page will show the purpose of this app and a list of the 5 popular c
 ## Technologies Used
 
 * React
+* jQuery
 * Open Weather Map API
