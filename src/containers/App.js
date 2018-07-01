@@ -17,7 +17,7 @@ class App extends Component {
   }
 
   fetchWeatherData() {
-    fetch(`http://api.openweathermap.org/data/2.5/group?id=1609350,2643743,6455259,1880252,5128638&units=imperial&appid=${process.env.REACT_APP_API_KEY}`)
+    fetch(`https://api.openweathermap.org/data/2.5/group?id=1609350,2643743,6455259,1880252,5128638&units=imperial&appid=${process.env.REACT_APP_API_KEY}`)
     .then(resp => resp.json())
     .then(data => this.setState({cities: data.list}))
     .catch(err => this.setState({error: true}));
