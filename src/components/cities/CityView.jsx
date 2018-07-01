@@ -36,6 +36,10 @@ function CityView(props) {
             <div className="info">
               <h1 className="special-font">{props.city.name}</h1>
               <img className="logo-mini" src={logo} alt="logo" />
+              <div className="other-specs">
+                <p><span className="spec">Sunrise:</span> <span>{new Date(props.city.sys.sunrise * 1000).toLocaleTimeString()}</span></p>
+                <p><span className="spec">Sunset:</span> <span>{new Date(props.city.sys.sunset * 1000).toLocaleTimeString()}</span></p>
+              </div>
             </div>
           </div>            
         </div>

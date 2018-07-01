@@ -20,8 +20,7 @@ function View(props) {
         <Loading />
       )}      
     </div>
-  )
-  
+  )  
 }
 
 export default View;
