@@ -414,32 +414,57 @@ header {
 /* Animation Weather Show */
 
 .show {
-  position: absolute;
-  top: 0;
-  min-height: 100vh;
   width: 100%;
-  border: 1px solid #000;
+  height: 100%;
+  position: relative;
 }
 
 .weather-element {
   width: 200px;
   transform: scale(0);
+  position: absolute;
+  top: 180px;
+  left: 40%;
+}
+
+@media screen and (max-width: 644px) {
+  .weather-element {
+    left: 35%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .weather-element {
+    left: 30%;
+  }
+}
+
+@media screen and (max-width: 416px) {
+  .weather-element {
+    left: 25%;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .weather-element {
+    left: 20%;
+  }
 }
 
 .sun {
-  animation: sun 4100ms 200ms forwards 1 ease-in;
+  animation: sun 4500ms 200ms forwards 1 ease-in;
 }
 
 .cloud {
-  animation: cloud 3400ms 800ms forwards 1 ease-in;
+  animation: cloud 3700ms 800ms forwards 1 ease-in;
 }
 
 .rain {
-  animation: rain 2700ms 1400ms forwards 1 ease-in;
+  animation: rain 2900ms 1400ms forwards 1 ease-in;
 }
 
 .snow {
-  animation: snow 2000ms 2000ms forwards 1 ease-in;
+  animation: snow 2100ms 2000ms forwards 1 ease-in;
 }
 
 .thunder {
@@ -451,23 +476,23 @@ header {
     transform: scale(0);
   }
 
-  7% {
+  6% {
     transform: scale(1.5);
   }
 
-  12% {
+  11% {
+    transform: scale(0);
+  }
+
+  69% {
     transform: scale(0);
   }
 
   76% {
-    transform: scale(0);
-  }
-
-  83% {
     transform: scale(1);
   }
 
-  98% {
+  89% {
     transform: scale(1);
   }
 
@@ -481,23 +506,23 @@ header {
     transform: scale(0);
   }
 
-  9% {
+  8% {
     transform: scale(1.5);
   }
 
-  15% {
+  14% {
     transform: scale(0);
   }
 
-  74% {
+  68% {
     transform: scale(0);
   }
 
-  82% {
+  76% {
     transform: scale(1);
   }
 
-  97% {
+  89% {
     transform: scale(1);
   }
 
@@ -511,23 +536,23 @@ header {
     transform: scale(0);
   }
 
-  11% {
+  10% {
     transform: scale(1.5);
   }
 
-  19% {
+  17% {
     transform: scale(0);
   }
 
-  70% {
+  66% {
     transform: scale(0);
   }
 
-  81% {
+  76% {
     transform: scale(1);
   }
 
-  96% {
+  90% {
     transform: scale(1);
   }
 
@@ -541,23 +566,23 @@ header {
     transform: scale(0);
   }
 
-  15% {
+  14% {
     transform: scale(1.5);
   }
 
-  25% {
+  24% {
     transform: scale(0);
   }
 
-  65% {
+  62% {
     transform: scale(0);
   }
 
-  80% {
+  76% {
     transform: scale(1);
   }
 
-  95% {
+  90% {
     transform: scale(1);
   }
 
@@ -595,14 +620,3 @@ header {
     transform: scale(0);
   }
 }
-
-@keyframes appear {
-  to {
-    transform: scale(1);
-  }
-
-  from {
-    transform: scale(0);
-  }
-}
-
