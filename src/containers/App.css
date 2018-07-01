@@ -171,6 +171,7 @@ header {
   transform: scaleY(0);
   transform-origin: top left;
   border-radius: 5px;
+  transition: transform 500ms, background 500ms;
 }
 
 .drop-view a {
@@ -190,14 +191,8 @@ header {
 }
 
 .city:hover .drop-view {
-  animation: slide 500ms forwards 1;
-}
-
-@keyframes slide {
-  to {
-    transform: scaleY(1);
-    background: rgba(0, 0, 0, .5);
-  }
+  transform: scaleY(1);
+  background: rgba(0, 0, 0, .5);
 }
 
 .cities .city:nth-child(odd) {
@@ -301,7 +296,7 @@ header {
 }
 
 .temp-container > * {
-  flex-basis: 220px;
+  flex-basis: 250px;
   padding: 30px 20px;
 }
 

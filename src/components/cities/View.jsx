@@ -32,7 +32,7 @@ function View(props) {
                   <div className="other-specs">
                     <p><span className="spec">Min:</span> <span>{Math.floor(props.city.city.main.temp_min)}&deg;F</span></p>
                     <p><span className="spec">Max:</span> <span>{Math.ceil(props.city.city.main.temp_max)}&deg;F</span></p>
-                    <p><span className="spec">Humidity:</span> <span>{props.city.city.main.humidity}</span></p>
+                    <p><span className="spec">Humidity:</span> <span>{props.city.city.main.humidity}%</span></p>
                   </div>
                 </div>
                 <div className="info">
